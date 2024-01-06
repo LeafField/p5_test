@@ -17,8 +17,6 @@ const sketch = (p: p5) => {
     p.fill(p.random(180, 200), 100, 100, 0.3);
     p.ellipse(p.random(0, p.width), p.random(0, p.height), 80, 80);
 
-    p.random(0, 10);
-
     locationX += velocityX;
 
     if (locationX > 400) {
