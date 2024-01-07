@@ -9,6 +9,7 @@ export default defineConfig({
       input: {
         index: path.resolve(__dirname, "index.html"),
         second: path.resolve(__dirname, "second.html"),
+        third: path.resolve(__dirname, "third.html"),
       },
       output: {
         entryFileNames: "js/[name].js",
