@@ -1,4 +1,4 @@
-import "./style.css";
+import "../css/style.css";
 import p5 from "p5";
 
 const app = document.querySelector<HTMLDivElement>("#app");

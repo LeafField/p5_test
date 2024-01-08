@@ -1,0 +1,1 @@
+import{p as a}from"./p5.min.js";const o=document.querySelector("#app"),r=e=>{e.setup=()=>{e.frameRate(10),e.createCanvas(400,300),e.colorMode(e.HSB)},e.draw=()=>{e.noStroke(),e.fill(e.random(180,200),100,100,.3),e.ellipse(e.random(0,e.width),e.random(0,e.height),80,80)}};o&&new a(r,o);
