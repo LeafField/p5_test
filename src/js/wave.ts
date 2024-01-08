@@ -39,6 +39,10 @@ const skech = (p: p5) => {
     p.background(255);
     calcWave();
     renderWave();
+
+    p.stroke("gray");
+    p.strokeWeight(0.3);
+    p.line(0, p.height / 2, p.width, p.height / 2);
   };
 };
 

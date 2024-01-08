@@ -1,17 +1,17 @@
 import { defineConfig } from "vite";
 import path from "path";
 import fs from "fs";
+import { ViteEjsPlugin } from "vite-plugin-ejs";
 
 const root = "./src";
 
-const files = fs.readdirSync(path.resolve(__dirname, "./src"), "utf-8");
+const files = fs.readdirSync(path.resolve(__dirname, root), "utf-8");
 const html = files
   .filter((file) => /\.html/.test(file))
   .map((filename) => {
     return [filename.split(".")[0], root + "/" + filename];
   });
 const htmlObj = Object.fromEntries(html);
-console.log(htmlObj);
 
 export default defineConfig({
   base: "./",
@@ -33,4 +33,5 @@ export default defineConfig({
       },
     },
   },
+  plugins: [ViteEjsPlugin()],
 });

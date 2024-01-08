@@ -8,14 +8,13 @@ const skech = (p: p5) => {
   let waveHeight: number = 80; //波の高さ
   let wave: number = 1200; // 周波数
   let dx: number = (Math.PI * 2) / wave; // 積分
-
   p.setup = () => {
     p.createCanvas(800, 400);
   };
   p.draw = () => {
     p.background(255);
 
-    velocity += 0.01;
+    velocity += 0.2;
     // p.noFill();
     p.strokeWeight(5);
     p.fill("red");
