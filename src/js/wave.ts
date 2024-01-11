@@ -11,7 +11,7 @@ const skech = (p: p5) => {
   let dx: number; //積分
 
   const calcWave = () => {
-    velocity += 0.01;
+    velocity += 0.02;
 
     let x = velocity;
     for (let i = 0; i < yValues.length; i++) {
