@@ -1,0 +1,1 @@
+import{p as n}from"./p5.min.js";const s=document.querySelector("#app"),r=e=>{let l,t;e.setup=()=>{e.createCanvas(600,400),l=50,t=0},e.draw=()=>{e.background(255),e.translate(e.width/2,e.height/2);let o=l*e.cos(t),a=l*e.sin(t);console.log(t,o,a),e.noStroke(),e.fill(200),e.ellipse(o,a,20,20),e.ellipse(0,0,5,5),t+=.1}};s&&new n(r,s);

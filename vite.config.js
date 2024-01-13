@@ -24,8 +24,7 @@ export default defineConfig({
         entryFileNames: "js/[name].js",
         chunkFileNames: "js/[name].js",
         assetFileNames: (assetInfo) => {
-          const extName = assetInfo.name.split(".")[1];
-          if (extName === "css") {
+          if (/\.css$/.test(assetInfo.name)) {
             return "style.css";
           }
           return "[name].[ext]";

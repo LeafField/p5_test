@@ -29,7 +29,7 @@ const skech = (p: p5) => {
     p.vertex(0, p.height);
     p.endShape(p.CLOSE);
 
-    theta += 0.2;
+    theta += dx * 40; // 倍数で速さ
   };
 };
 

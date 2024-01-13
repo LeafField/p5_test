@@ -1,7 +1,6 @@
 import p5 from "p5";
 import "../css/style.css";
 import { Mover } from "./mover";
-import { Attractor } from "./attractor";
 
 const app = document.querySelector<HTMLDivElement>("#app");
 

@@ -1,0 +1,1 @@
+import{p as s}from"./p5.min.js";const n=document.querySelector("#app"),c=e=>{e.setup=()=>{e.createCanvas(600,400),e.stroke(200)},e.draw=()=>{e.background(255),e.translate(e.width/2,e.height/2),e.rotate(e.frameCount/100),e.beginShape();for(let t=0;t<e.TWO_PI*2;t+=.01){let a=e.sin(t*2.5)*100,r=e.cos(t)*a,o=e.sin(t)*a;e.vertex(r,o)}e.endShape()}};n&&new s(c,n);
